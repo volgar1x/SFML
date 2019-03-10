@@ -191,6 +191,8 @@ public:
     ////////////////////////////////////////////////////////////
     const ContextSettings& getSettings() const;
 
+    float getPixelDensity() const;
+
     ////////////////////////////////////////////////////////////
     /// \brief Enable or disable vertical synchronization
     ///

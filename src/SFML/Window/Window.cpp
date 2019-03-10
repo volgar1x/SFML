@@ -243,4 +243,10 @@ void Window::initialize()
     WindowBase::initialize();
 }
 
+
+////////////////////////////////////////////////////////////
+float Window::getPixelDensity() const {
+    return m_impl->getPixelDensity();
+}
+
 } // namespace sf

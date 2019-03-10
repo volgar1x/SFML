@@ -37,6 +37,7 @@
 #import <SFML/Window/OSX/SFKeyboardModifiersHelper.h>
 #import <SFML/Window/OSX/SFViewController.h>
 #import <SFML/Window/OSX/SFWindowController.h>
+#include "WindowImplCocoa.hpp"
 
 namespace sf
 {
@@ -523,6 +524,10 @@ bool WindowImplCocoa::hasFocus() const
     return [m_delegate hasFocus];
 }
 
+////////////////////////////////////////////////////////////
+float WindowImplCocoa::getPixelDensity() const {
+    return (float) [m_delegate displayScaleFactor];
+}
 
 } // namespace priv
 
